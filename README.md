@@ -5,5 +5,5 @@
 
 ## 怎么使用
 
-1. 在对应题目下的 `index.js` 中补充完整函数。
+1. 在对应题目下的 `index.js` 中补充完整函数
 2. `pnpm test xxx`, xxx 为你需要测试的项目名称，用 [vitest](https://cn.vitest.dev/guide/filtering.html#cli) 的筛选
