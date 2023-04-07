@@ -7,8 +7,9 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "deploy": "git add . && git-cz"
   },
   "keywords": [],
   "author": "",
