@@ -21,9 +21,17 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm ci
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+          
+      - name: install
+        run: pnpm install
+      
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
