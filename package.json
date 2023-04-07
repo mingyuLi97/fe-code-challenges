@@ -5,12 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "vitepress": "1.0.0-alpha.65",
     "vitest": "^0.29.8"
+  },
+  "dependencies": {
+    "@algolia/client-search": "^4.17.0",
+    "@limy-org/vite-plugin-vitepress-auto-sidebar": "^1.0.1",
+    "glob": "^9.3.4",
+    "vite": "^4.2.1"
   }
 }
