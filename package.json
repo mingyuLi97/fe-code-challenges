@@ -8,7 +8,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "deploy": "git add . && git-cz",
+    "deploy": "git add . && git-cz && git push",
     "create": "node scripts/create.js"
   },
   "author": "mingyu",
