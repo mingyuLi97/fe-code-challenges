@@ -14,6 +14,6 @@
     "declaration": true,
     "inlineSourceMap": true
   },
-  "include": ["questions/**/*"],
-  "exclude": []
+  "includes": ["questions/**/*"],
+  "exclude": ["node_modules"]
 }
