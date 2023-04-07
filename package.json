@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
     "coverage": "vitest run --coverage",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "deploy": "git add . && git-cz"
+    "deploy": "git add . && git-cz",
+    "create": "node scripts/create.js"
   },
   "keywords": [],
   "author": "",

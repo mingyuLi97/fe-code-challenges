@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# 调用方式 ./run 1 ,这里的 1 代表题号
-npx vitest run $1
