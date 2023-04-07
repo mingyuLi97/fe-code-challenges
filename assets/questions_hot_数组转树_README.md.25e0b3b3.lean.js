@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,N as l}from"./chunks/framework.57e8d462.js";const C=JSON.parse('{"title":"0.数组转树","description":"","frontmatter":{},"headers":[],"relativePath":"questions/hot/数组转树/README.md"}'),p={name:"questions/hot/数组转树/README.md"},o=l("",6),B=[o];function e(c,t,r,y,A,F){return a(),n("div",null,B)}const E=s(p,[["render",e]]);export{C as __pageData,E as default};
