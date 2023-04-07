@@ -4,6 +4,7 @@ import VitePluginAutoSidebar from "@limy-org/vite-plugin-vitepress-auto-sidebar"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "FE Code Challenges",
+  base: "/fe-code-challenges/",
   vite: {
     plugins: [
       VitePluginAutoSidebar({
