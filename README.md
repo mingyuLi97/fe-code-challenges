@@ -11,3 +11,8 @@
 
 1. 在对应题目下的 `index.js` 中补充完整函数
 2. `pnpm test xxx`, xxx 为你需要测试的项目名称，用 [vitest](https://cn.vitest.dev/guide/filtering.html#cli) 的筛选
+
+## TODO
+
+1. DOM 相关 (vdom-render)
+2. promise-limit
