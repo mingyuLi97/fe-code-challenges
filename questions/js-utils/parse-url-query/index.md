@@ -1,11 +1,10 @@
 # parse-url-query
 
 ## 描述
-
 > 将 url 参数转换成对象,
 >
 > 1. 要求对 k，v decode
-> 2. 处理异常：https://example.com/?a=1&b=&c=1&d&e=1 => {a: '1', b: '', c: '1', d: '', e:'1'}
+> 2. 处理异常：https://example.com/?a=1&b=&c=1&d&e=1 => `{a: '1', b: '', c: '1', d: '', e:'1'}`
 
 ## 题解
 
