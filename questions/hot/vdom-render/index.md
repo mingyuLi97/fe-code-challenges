@@ -41,5 +41,25 @@
 ## 题解
 
 ```javascript
-
+function main(vnode) {
+  function render(node) {
+    if (!node) return;
+    if (typeof node === "string") {
+      return document.createTextNode(node);
+      return "";
+    }
+    const { tag, attrs = {}, children = [] } = node;
+    const el = document.createElement(tag);
+    for (const k in attrs) {
+      el.setAttribute(k, attrs[k]);
+    }
+    if (children.length) {
+      children.forEach((child) => {
+        el.appendChild(render(child));
+      });
+    }
+    return el;
+  }
+  return render(vnode);
+}
 ```

@@ -25,21 +25,4 @@ const vnode = {
 
 export default function main(vnode) {
   // do something
-  function create(node) {
-    const isTextNode = typeof node === "string";
-    if (isTextNode) {
-      return document.createTextNode(node);
-    }
-    const { tag, attrs = {}, children = [] } = node;
-    const el = document.createElement(tag);
-    for (let k in attrs) {
-      el[k] = attrs[k];
-    }
-    children.forEach((child) => {
-      el.appendChild(create(child));
-    });
-    return el;
-  }
-
-  return create(vnode);
 }
