@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,N as l}from"./chunks/framework.57e8d462.js";const C=JSON.parse('{"title":"this-challenge","description":"","frontmatter":{},"headers":[],"relativePath":"docs/this/challenge.md"}'),o={name:"docs/this/challenge.md"},p=l("",46),e=[p];function B(c,t,r,y,i,F){return a(),n("div",null,e)}const d=s(o,[["render",B]]);export{C as __pageData,d as default};
