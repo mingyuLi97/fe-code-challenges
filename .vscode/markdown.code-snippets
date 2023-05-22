@@ -1,0 +1,17 @@
+{
+  "challenge template": {
+    "prefix": "#challenge",
+    "body": [
+      "## $1",
+      "```javascript\n",
+      "```\n",
+      ":::details 查看答案/解析\n",
+      "**答案：**\n",
+      "```js\n",
+      "```\n",
+      "**解析：**\n",
+      ":::"
+    ],
+    "description": "Log output to console"
+  }
+}

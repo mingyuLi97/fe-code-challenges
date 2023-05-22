@@ -25,7 +25,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "code", link: "questions/js-apis/手写new/index" }],
+    nav: [
+      { text: "code", link: "questions/js-apis/手写new/index" },
+      { text: "this", link: "docs/this/challenge" },
+    ],
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
