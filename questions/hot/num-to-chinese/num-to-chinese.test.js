@@ -1,0 +1,43 @@
+import { describe, it, expect } from "vitest";
+import fn from ".";
+
+describe("num-to-chinese", () => {
+  it("num to chinese", () => {
+    expect(fn(0)).toBe("零");
+    expect(fn(5)).toBe("五");
+    expect(fn(10)).toBe("十");
+    expect(fn(13)).toBe("十三");
+    expect(fn(100)).toBe("一百");
+    expect(fn(101)).toBe("一百零一");
+    expect(fn(110)).toBe("一百一十");
+    expect(fn(111)).toBe("一百一十一");
+    expect(fn(1000)).toBe("一千");
+    expect(fn(1001)).toBe("一千零一");
+    expect(fn(1001)).toBe("一千零一");
+    expect(fn(10000)).toBe("一万");
+    expect(fn(10001)).toBe("一万零一");
+    expect(fn(10010)).toBe("一万零一十");
+    expect(fn(10100)).toBe("一万零一百");
+    expect(fn(11000)).toBe("一万一千");
+    expect(fn(11001)).toBe("一万一千零一");
+    expect(fn(11100)).toBe("一万一千一百");
+    expect(fn(11111)).toBe("一万一千一百一十一");
+    expect(fn(100000000)).toBe("一亿");
+    expect(fn(100000001)).toBe("一亿零一");
+    expect(fn(100000010)).toBe("一亿零一十");
+    expect(fn(100000100)).toBe("一亿零一百");
+    expect(fn(100001000)).toBe("一亿零一千");
+    expect(fn(100010000)).toBe("一亿一万");
+    expect(fn(100010001)).toBe("一亿一万零一");
+    expect(fn(100010010)).toBe("一亿一万零一十");
+    expect(fn(100011000)).toBe("一亿一万一千");
+    expect(fn(100100000)).toBe("一亿一百万");
+    expect(fn(100100100)).toBe("一亿一百万零一百");
+    expect(fn(100101000)).toBe("一亿一百万一千");
+    expect(fn(101000000)).toBe("一亿零一十万");
+    expect(fn(101000100)).toBe("一亿零一十万零一百");
+    expect(fn(101001000)).toBe("一亿零一十万一千");
+    expect(fn(101100000)).toBe("一亿零一百一十万");
+    expect(fn(101100101)).toBe("一亿零一百一十万零一百零一");
+  });
+});
