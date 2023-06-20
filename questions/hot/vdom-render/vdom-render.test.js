@@ -23,12 +23,13 @@ const vnode = {
     },
   ],
 };
+const el = document.createElement("div");
+el.innerHTML =
+  '<div id="app"><span><a>text</a></span><span><a></a><a></a></span></div>';
 
 describe("vdom-render", () => {
   it("true dom", () => {
-    // expect(fn(fn(vnode).outerHTML)).toBe(
-    //   '<div id="app"><span><a>text</a></span><span><a></a><a></a></span></div>'
-    // );
     expect(fn(vnode)).not.toBeNull();
+    expect(fn(vnode)).toEqual(el.childNodes[0]);
   });
 });
