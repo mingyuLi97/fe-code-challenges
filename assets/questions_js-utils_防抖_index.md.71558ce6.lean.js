@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,N as l}from"./chunks/framework.57e8d462.js";const C=JSON.parse('{"title":"防抖","description":"","frontmatter":{},"headers":[],"relativePath":"questions/js-utils/防抖/index.md"}'),p={name:"questions/js-utils/防抖/index.md"},o=l("",5),e=[o];function t(B,c,r,y,i,A){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{C as __pageData,d as default};
