@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0.5 边框</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        box-sizing: border-box;
+      }
+      .half-border {
+      }
+      .half-border::after {
+        content: "";
+        display: block;
+        width: 200%;
+        height: 200%;
+        border: 1px solid red;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box half-border"></div>
+    <div class="box" style="border: 1px solid red"></div>
+  </body>
+</html>
